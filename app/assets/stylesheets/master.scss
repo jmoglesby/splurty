@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Krub&display=swap');
 
 header {
   border-top: 9px solid #222222;
@@ -6,6 +7,16 @@ header {
 
 hr {
   clear: both;
+}
+
+h1 {
+  font-family: 'quicksandlight', sans-serif;
+  font-size: 48px;
+}
+
+h3 {
+  font-family: 'quicksandregular', sans-serif;
+  font-weight: bold;
 }
 
 .clear {
@@ -40,6 +51,8 @@ hr {
 
 .links {
   padding-top: 26px;
+  font-family: 'quicksandregular', sans-serif;
+  font-weight: bold;
 }
 
 .links a {
