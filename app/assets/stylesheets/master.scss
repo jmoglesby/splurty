@@ -3,20 +3,30 @@
 
 header {
   border-top: 9px solid #222222;
+  margin-bottom: none;
+  border-bottom: 1px solid lightgray;
 }
 
 hr {
   clear: both;
 }
 
-h1 {
-  font-family: 'quicksandlight', sans-serif;
+h2 {
+  font-family: 'quicksandregular', sans-serif;
   font-size: 48px;
 }
 
-h3 {
+h4 {
   font-family: 'quicksandregular', sans-serif;
   font-weight: bold;
+}
+
+h5 {
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h5 span {
+  color: #dddddd;
 }
 
 .clear {
@@ -38,9 +48,9 @@ h3 {
   font-size: 10px;
   line-height: 16px;
   cursor: pointer;
-  transform:rotate(11deg);
-  -ms-transform:rotate(11deg); /* IE 9 */
-  -webkit-transform:rotate(11deg); /* Opera, Chrome, and Safari */
+  transform:rotate(-11deg);
+  -ms-transform:rotate(-11deg); /* IE 9 */
+  -webkit-transform:rotate(-11deg); /* Opera, Chrome, and Safari */
 }
 
 .slogan {
@@ -51,7 +61,7 @@ h3 {
 
 .links {
   padding-top: 26px;
-  font-family: 'quicksandregular', sans-serif;
+  font-family: 'quicksandlight', sans-serif;
   font-weight: bold;
 }
 
@@ -59,11 +69,16 @@ h3 {
   color: black;
   font-size: 25px;
   border-bottom: 1px solid #dfdfdf;
+  text-decoration: none;
 }
 
 .next-quote {
   color: #f84342;
   font-size: 20px;
+}
+
+.next-quote a {
+  text-decoration: none;
 }
 
 .logo:hover {
@@ -74,6 +89,16 @@ h3 {
   font-size: 12px;
 }
 
-.about {
+.about, .modal {
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+
+::selection {
+  background-color: #f8424275;
 }

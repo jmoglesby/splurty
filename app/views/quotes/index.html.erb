@@ -1,2 +1,17 @@
-<h1><%= @quote.saying %></h1>
-<h3><%= @quote.author %></h3>
+<h5>
+  <span>SPLURTY / No. <%= @quote.id %> </span>
+  &nbsp;&nbsp;
+  Some more <em>Parks & Rec</em> goodness...
+</h5>
+
+<h2>
+  <span class="text-muted">" </span>
+  <%= @quote.saying %>
+  <span class="text-muted"> "</span>
+</h2>
+<h4 class="float-right text-muted"> - <%= @quote.author %></h4>
+
+<br class="clear" />
+<br />
+<br />
+<br />
