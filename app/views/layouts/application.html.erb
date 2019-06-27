@@ -15,11 +15,11 @@
         <%= link_to  root_path, class: 'logo' do %>
           <div class="circle">
             <br />
-            Parks
+            SPLURTY
             <br />
-            &
+            Parks & Rec
             <br />
-            Rec
+            Edition
           </div>
         <% end %>
       </div>
@@ -32,7 +32,7 @@
         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
           Launch demo modal
         </button> -->
-        <%= link_to 'Contribute', new_quote_path, class: "mx-1", data: {toggle: 'modal', target: '#myModal'} %>
+        <%= link_to 'Contribute', '#', class: "mx-1", data: {toggle: 'modal', target: '#myModal'} %>
         &nbsp;
         <%= link_to 'About', about_path, class: "mx-1" %>
       </div>
@@ -50,9 +50,9 @@
           </div>
           <%= simple_form_for Quote.new do |f| %>
             <div class="modal-body">
-                <%= f.input :saying, label: "What quote do you want to add?", placeholder: "ex. I know more than you." %>
-                <br />
-                <%= f.input :author, label: "Which character said it?", placeholder: "ex. Ron Swanson" %>
+              <%= f.input :saying, label: "What quote do you want to add?", placeholder: "ex. I know more than you." %>
+              <br />
+              <%= f.input :author, label: "Which character said it?", placeholder: "ex. Ron Swanson" %>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
