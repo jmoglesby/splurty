@@ -10,7 +10,7 @@ class QuotesController < ApplicationController
       if @quote.errors[:saying].include? "profanity"
         flash[:error] = '<strong>Could not save</strong> - your quote cannot include profanity.'
       else
-        flash[:error] = '<strong>Could not save</strong> - your quote must be 3-140 characters in length.'
+        flash[:error] = '<strong>Could not save</strong> - your quote must be 3-240 characters in length.'
       end
     end
 
