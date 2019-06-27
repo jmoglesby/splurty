@@ -4,7 +4,7 @@ class QuotesController < ApplicationController
   end
 
   def create
-    @quote = Quote.create(quote_params)
+    @quote = Quote.create(quote_params).gsub('"','')
 
     if @quote.errors[:saying].any?
       if @quote.errors[:saying].include? "profanity"
