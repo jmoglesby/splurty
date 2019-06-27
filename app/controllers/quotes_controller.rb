@@ -5,7 +5,7 @@ class QuotesController < ApplicationController
 
   def create
     @quote = Quote.new(quote_params)
-    @quote.saying = @quote.saying.gsub('"','')
+    @quote.saying = @quote.saying.gsub(/[",”,“]/,'')
     @quote.save
 
     if @quote.errors[:saying].any?
